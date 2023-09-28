@@ -1,1 +1,46 @@
-<p>calculadora works!</p>
+<div class="container">
+  <h1>App Calculadora</h1>
+  <div class="column">
+    <div class="row">
+      <label class="form-label">Operando A</label>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Escribe el Operando A"
+        [(ngModel)]="operandoA"
+      />
+    </div>
+    <div class="row">
+      <label class="form-label">Operando B</label>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Escribe el Operando B"
+        [(ngModel)]="operandoB"
+      />
+    </div>
+    <div class="row">
+      <div class="column">
+        <button
+          class="btn btn-primary"
+          (click)='sumar()'
+        >Sumar</button>
+        <button
+          class="btn btn-primary"
+          (click)='restar()'
+        >Restar</button>
+        <button
+          class="btn btn-primary"
+          (click)='multiplicar()'
+        >Multiplicar</button>
+        <button
+          class="btn btn-primary"
+          (click)='dividir()'
+        >Dividir</button>
+      </div>
+    <div class="row">
+      <label> Resultado: {{resultado}}
+      </label>
+    </div>
+  </div>
+</div>

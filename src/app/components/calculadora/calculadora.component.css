@@ -1,0 +1,21 @@
+.row{
+  padding: 1%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.container{
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding:5%;
+}
+.btn{
+  margin:1%
+}
+
+.column{
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
