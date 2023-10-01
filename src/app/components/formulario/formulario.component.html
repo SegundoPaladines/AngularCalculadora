@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <label class="form-label">Operando A</label>
+    <input
+      type="number"
+      class="form-control"
+      placeholder="Escribe el Operando A"
+      [(ngModel)]="operandoA"
+    />
+  </div>
+  <br />
+  <div class="row">
+    <label class="form-label">Operando B</label>
+    <input
+      type="number"
+      class="form-control"
+      placeholder="Escribe el Operando B"
+      [(ngModel)]="operandoB"
+    />
+  </div>
+  <br />
+  <div class="row">
+    <div class="col">
+      <button
+        class="btn btn-primary"
+        (click)='sumar()'
+      >Sumar</button>
+    </div>
+    <div class="col">
+      <button
+        class="btn btn-primary"
+        (click)='restar()'
+      >Restar</button>
+    </div>
+    <div class="col">
+      <button
+        class="btn btn-primary"
+        (click)='multiplicar()'
+      >Multiplicar</button>
+    </div>
+    <div class="col">
+      <button
+        class="btn btn-primary"
+        (click)='dividir()'
+      >Dividir</button>
+    </div>
+</div>
